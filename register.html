@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+    <div class="auth-card register-card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Fill in the details to register your account</p>
+
+        <form action="index.html" method="get">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Rowan Atkinson" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" required>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" name="confirm" placeholder="Re-enter your password" minlength="6" required>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" name="gender" value="others" required> Others</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <label class="checkbox"><input type="checkbox" name="terms" required> I agree to the terms &amp; conditions</label>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+        <p class="switch-text">Already have an account? <a href="index.html">Login</a></p>
+    </div>
+</body>
+</html>
